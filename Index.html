@@ -1,0 +1,80 @@
+<!--Question_1-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Answers</h1>
+
+<p id="myText_1"></p>
+<p id="myText_2"></p>
+<p id="myText_3"></p>
+<p id="myText_4"></p>
+<p id="myText_5"></p>
+<p id="myText_6"></p>
+
+
+<div id = "myDiv">  This is a div element </div>
+<button onclick="testDiv()">Div_Example</button>
+
+<script>
+//Question_1
+var carName = "Honda City";
+document.getElementById("myText_1").innerHTML = carName;
+
+//Question_2
+var numberTest = 150;
+document.getElementById("myText_2").innerHTML = numberTest; 
+
+//Question_3
+var x= 5;
+var y=10;
+document.getElementById("myText_3").innerHTML = x+y; 
+
+//Question_4
+var x = 10;
+var y = 20;
+var z = x + y;
+document.getElementById("myText_4").innerHTML = z; 
+
+//Question_5
+var firstName ="John" , lastName = "Doe", age= 35;
+document.getElementById("myText_5").innerHTML = 
+firstName + " " + lastName + " is " + age;
+
+//Question_6
+
+var dob= new Date(1990,11,4);
+
+function calculateAge(dob)
+{
+	var now = new Date();
+	var diff = now.getTime() - dob.getTime();
+	return Math.floor(diff/(1000 * 60 * 60 * 24 * 365.25));
+}
+var age = calculateAge(dob);
+document.getElementById("myText_6").innerHTML = age; 
+
+
+//Question_7
+
+function testDiv()
+{
+var x = document.getElementById("myDiv").innerHTML;
+x = 20;
+alert(x);
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
